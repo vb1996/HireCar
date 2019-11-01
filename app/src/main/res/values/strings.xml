@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Vehicle</string>
+    <string name="vehicle_list">Vehicle List</string>
+</resources>

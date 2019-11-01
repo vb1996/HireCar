@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40FFEB3B"
+    tools:context=".vehicledetail">
+
+    <TextView
+        android:id="@+id/vdetail"
+        android:layout_width="179dp"
+        android:layout_height="48dp"
+        android:text="Vehicle Detail"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVdl"
+        android:layout_width="367dp"
+        android:layout_height="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vdetail"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="275dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Please select the rent dates."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvVdl" />
+
+    <TextView
+        android:id="@+id/startdate"
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Start Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/startreserve"
+        android:layout_width="99dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="40dp"
+        android:text="Start Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/rentbtn"
+        android:layout_width="65dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="68dp"
+        android:background="#438BC34A"
+        android:text="Rent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enddate"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/reservebtn"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="#518BC34A"
+        android:text="Reserve"
+        app:layout_constraintBottom_toBottomOf="@+id/rentbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rentbtn"
+        app:layout_constraintTop_toBottomOf="@+id/endreserve"
+        app:layout_constraintVertical_bias="0.991" />
+
+    <Button
+        android:id="@+id/rsviewbtn"
+        android:layout_width="233dp"
+        android:layout_height="35dp"
+        android:background="#438BC34A"
+        android:text="Reservation List View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rentbtn"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="3dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/startdate"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/enddate"
+        android:layout_width="97dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="12dp"
+        android:text="End Date"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startdate" />
+
+    <TextView
+        android:id="@+id/endreserve"
+        android:layout_width="94dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="12dp"
+        android:text="End Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/startreserve" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8D8BC34A"
+    tools:context=".EmpLoginView">
+
+    <TextView
+        android:id="@+id/CustomerList"
+        android:layout_width="147dp"
+        android:layout_height="28dp"
+        android:text="Customers List"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvcustomer"
+        android:layout_width="352dp"
+        android:layout_height="444dp"
+        android:background="#008BC34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <TextView
+        android:id="@+id/headtxt"
+        android:layout_width="352dp"
+        android:layout_height="19dp"
+        android:text="No        UserName        PassWord            Contact"
+        app:layout_constraintBottom_toTopOf="@+id/rvcustomer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomerList"
+        app:layout_constraintVertical_bias="0.581" />
+
+    <Button
+        android:id="@+id/createbtn"
+        android:layout_width="148dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#8F8BC34A"
+        android:text="Create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvcustomer"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <Button
+        android:id="@+id/vlistviewbtn"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:background="#6F8BC34A"
+        android:text="Vehicles List View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/createbtn"
+        app:layout_constraintTop_toTopOf="@+id/createbtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

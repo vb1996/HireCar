@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#594CAF50">
+
+
+    <TextView
+        android:id="@+id/createtitle"
+        android:layout_width="205dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="68dp"
+        android:text="Customer Information"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/changebtn"
+        android:layout_width="91dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="36dp"
+        android:background="#5BFFEB3B"
+        android:text="Modify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvEmpdetail" />
+
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:background="#72FFEB3B"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toEndOf="@+id/changebtn"
+        app:layout_constraintTop_toTopOf="@+id/changebtn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEmpdetail"
+        android:layout_width="360dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createtitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvcId"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:background="#00FFFFFF"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvcName"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:background="#00FFFFFF"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvcpwd"
+        android:layout_width="71dp"
+        android:layout_height="38dp"
+        android:background="#00FFFFFF"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvccontact"
+        android:layout_width="169dp"
+        android:layout_height="38dp"
+        android:background="#00FFFFFF"
+        android:text="TextView" />
+</LinearLayout>
